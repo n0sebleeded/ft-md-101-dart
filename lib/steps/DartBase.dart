@@ -1,8 +1,11 @@
+import 'package:ft_md_101_dart/ClassInstance.dart';
+
 class DartBase {
   void run() {
     print("DartBase: hello world");
     _stepConf();
     _stepDataType();
+    _classInstance();
   }
 
   void _stepConf() {
@@ -21,5 +24,10 @@ class DartBase {
     print("_stepDataType: $doubleVal");
     print("_stepDataType: $sum");
     db._stepConf();
+  }
+
+  void _classInstance() {
+    ClassInstance ci = ClassInstance();
+    ci.run();
   }
 }
